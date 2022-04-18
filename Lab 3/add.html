@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: rgb(43, 206, 103)" ;></body>
+
+<h1> Addition of 2 numbers </h1>
+
+Enter First Number : <br>
+<input type="text" id="Text1" name="TextBox1">
+<br> Enter Second Number : <br>
+<input type="text" id="Text2" name="TextBox2">
+<br> Result : <br>
+<input type="text" id="txtresult" name="TextBox3">
+<br>
+<input type="button" name="clickbtn" value="Display Result" onclick="add_number()">
+
+<script type="text/javascript">
+    function add_number() {
+
+        var first_number = parseInt(document.getElementById("Text1").value);
+        var second_number = parseInt(document.getElementById("Text2").value);
+        var result = first_number + second_number;
+
+        document.getElementById("txtresult").value = result;
+    }
+</script>
+
+<button type="button" onclick="document.getElementById('txtresult').style.color = 'red'">
+    Change colour </button>
+</body>
+
+</html>
