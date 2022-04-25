@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: rgb(192, 248, 212)" ;></body>
+
+<h1> Program to find data type of input </h1>
+
+Enter input : <br>
+<input type="text" id="Text1" name="TextBox1">
+
+<br>
+<input type="button" name="clickbtn" value="Display Result" onclick="check()">
+
+<br> The input is of the data type: <br>
+<input type="text" id="txtresult" name="TextBox3">
+
+
+<script type="text/javascript">
+    function check() {
+
+        var n = document.getElementById("Text1").value;
+
+        var result = typeof(n);
+
+        document.getElementById("txtresult").value = result;
+    }
+</script>
+
+<button type="button" onclick="document.getElementById('txtresult').style.color = 'red'">
+    Change colour </button>
+</body>
+
+</html>

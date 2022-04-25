@@ -1,0 +1,40 @@
+<html>
+
+
+<body style="background-color: rgb(192, 248, 212)" ;></body>
+
+<h1> Program to find whether the no is positive or negative</h1>
+
+Enter the number : <br>
+<input type="text" id="Text1" name="TextBox1">
+
+<br>
+<input type="button" name="clickbtn" value="Display Result" onclick="check()">
+
+<p id="p1">Positive or negative number</p>
+
+
+
+<script type="text/javascript">
+    function check() {
+
+        var n = parseInt(document.getElementById("Text1").value);
+        let result;
+
+
+        if (n >= 0) {
+            result = "positive";
+        } else {
+            result = "negative";
+        }
+
+
+
+        document.getElementById("p1").innerHTML = "The given number is " + result;
+    }
+</script>
+
+
+</body>
+
+</html>
