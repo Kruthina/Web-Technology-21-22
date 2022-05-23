@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<script>
+    var arrayNum = [];
+    var arrayEven = [];
+    var arrayOdd = [];
+    var i;
+    var NUM_INPUTS;
+    //var sumOdd = 0.0;
+    //var sumEven = 0.0;
+    //var avgO = 0.0;
+    //var avgE = 0.0;
+
+    NUM_INPUTS = parseInt(prompt("Enter the size of the array: "));
+    for (i = 0; i < NUM_INPUTS; i++) {
+        arrayNum.push(parseFloat(prompt("Enter the numbers: " + (i + 1))));
+        if ((arrayNum[i] % 2) === 1) {
+            arrayOdd.push(arrayNum[i]);
+            // sumOdd += arrayNum[i];
+        } else {
+            arrayEven.push(arrayNum[i]);
+            // sumEven += arrayNum[i];
+
+        }
+    }
+    //avgO = sumOdd / arrayOdd.length;
+    //avgE = sumEven / arrayEven.length;
+    //Output results
+    document.write("All numbers in the array are: " + arrayNum);
+
+    document.write("<br/>All even numbers in the array are: " + arrayEven);
+    //document.write("<br/> The sum of all even numbers is: " + sumEven + " and average of the even numbers is: " + avgE);
+
+    document.write("<br/>");
+    document.write("<br/>All odd numbers in the array are: " + arrayOdd);
+    // document.write("<br/> The sum of all odd numbers is: " + sumOdd + " and the average of the odd numbers is " + avgO);
+</script>
+
+</html>
