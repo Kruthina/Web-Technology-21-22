@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        var inputArray = [];
+
+        var size = prompt("Enter size");
+        for (var i = 0; i < size; i++) {
+
+            //Taking Input from user
+            inputArray[i] = prompt('Enter Element ' + (i + 1));
+        }
+        var pos = prompt("Enter position of split");
+        var newArr = inputArray.slice(0, pos);
+        var p2 = inputArray.slice(pos);
+        console.log(newArr);
+        console.log(p2);
+    </script>
+</body>
+
+</html>

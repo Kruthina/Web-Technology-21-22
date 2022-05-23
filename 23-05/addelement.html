@@ -1,0 +1,31 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        var inputArray = [];
+
+        var size = prompt("Enter size");
+        for (var i = 0; i < size; i++) {
+
+            //Taking Input from user
+            inputArray[i] = prompt('Enter Element ' + (i + 1));
+        }
+        var pos = prompt("Enter position in array");
+        var num = prompt("Enter number");
+        var newArr = inputArray.splice(pos, 0, num);
+        document.write("Elements in array: ")
+        for (var i = 0; i <= size; i++) {
+            document.write(" " + inputArray[i]);
+        }
+    </script>
+</body>
+
+</html>
